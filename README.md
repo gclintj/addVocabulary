@@ -9,6 +9,8 @@ or
 
 abandon, apple, come, come true, good
 
+---
+
 用python3运行\\wsl$\Ubuntu\home\lintj\addVocabulary\main.py，
 
 会添加单词到\\wsl$\Ubuntu\home\lintj\file.csv
