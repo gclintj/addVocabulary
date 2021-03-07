@@ -17,6 +17,8 @@ abandon, apple, come, come true, good
 
 单词间中逗号隔开，中英文逗号均可。
 
+不怕重复，所以可以随意添加。
+
 ## to-do:  
 把中文转换成拼音再进行排序。
 
