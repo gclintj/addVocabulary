@@ -9,8 +9,13 @@ or
 
 abandon, apple, come, come true, good
 
+用python3运行\\wsl$\Ubuntu\home\lintj\addVocabulary\main.py，
 
-to-do:  
+会添加单词到\\wsl$\Ubuntu\home\lintj\file.csv
+
+单词间中逗号隔开，中英文逗号均可。
+
+## to-do:  
 把中文转换成拼音再进行排序。
 
 Additional useless notes:  
