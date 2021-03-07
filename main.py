@@ -1,12 +1,16 @@
 import csv
+import unicodedata
 
 #use a file
 path = '/home/lintj/file.csv'
-with open(path, newline = '') as oldcsv:
-    oldlist = list(csv.reader(oldcsv))[0]
+with open(path, mode='w+', newline = '') as oldcsv:
+    oldlist = list(csv.reader(oldcsv))
+    if oldlist:
+        oldlist = oldlist[0]
 
 #get new words
 words = input("Enter word(s) to be added, seperated by comma:\n")
+words = unicodedata.normalize('NFKC',words)
 
 #split
 add_list = [w.strip() for w in words.split(',') if w.strip()]
