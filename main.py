@@ -2,8 +2,10 @@ import csv
 import unicodedata
 
 #use a file
-path = '/home/lintj/file.csv'
-with open(path, mode='w+', newline = '') as oldcsv:
+filepath = '/home/lintj/file.csv'
+
+open(filepath, mode='a', newline = '') 
+with open(filepath, newline = '') as oldcsv:
     oldlist = list(csv.reader(oldcsv))
     if oldlist:
         oldlist = oldlist[0]
@@ -25,9 +27,10 @@ new_list = list(set(oldlist + add_list))
 new_list.sort()
 
 print(new_list)
+print(len(new_list),"words in total.")
 
 #save file
-with open(path, 'w', newline = '') as newcsv:
+with open(filepath, 'w', newline = '') as newcsv:
     write = csv.writer(newcsv)
     write.writerow(new_list)
 
